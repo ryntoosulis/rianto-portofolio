@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rianto - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="RI2.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-enhanced">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 border-gray-800 border-b">
+        <div class="flex items-center justify-between">
+          <div class="logo-n animate__animated animate__fadeInDown">
+            <a href="#home">R</a>
+          </div>
+
+          <!-- Improved hamburger menu button -->
+          <button
+            class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white rounded-md"
+            id="mobile-menu-btn"
+            aria-label="Toggle mobile menu"
+          >
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <div class="hidden md:flex space-x-6 lg:space-x-8">
+            <a
+              href="#about"
+              class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s"
+              >About</a
+            >
+            <a
+              href="#education"
+              class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s"
+              >Education</a
+            >
+            <a
+              href="#project"
+              class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s"
+              >Project</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s"
+              >Contact</a
+            >
+          </div>
+          <div
+            class="hidden md:block text-sm animate__animated animate__fadeInDown animate__delay-1s"
+          >
+            <a href="#contact" class="flex items-center gap-2">
+              Let's talk
+              <span
+                class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Improved mobile menu -->
+      <div
+        class="mobile-menu fixed top-0 right-0 h-full md:hidden"
+        id="mobile-menu"
+      >
+        <div class="flex flex-col h-full px-6 py-8">
+          <button
+            class="self-end text-white mb-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white rounded-md"
+            id="close-menu-btn"
+            aria-label="Close mobile menu"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="flex-1 flex flex-col justify-center space-y-6">
+            <a
+              href="#about"
+              class="text-center animate__animated animate__fadeInRight"
+              >About</a
+            >
+            <a
+              href="#education"
+              class="text-center animate__animated animate__fadeInRight animate__delay-1s"
+              >Education</a
+            >
+            <a
+              href="#project"
+              class="text-center animate__animated animate__fadeInRight animate__delay-2s"
+              >Project</a
+            >
+            <a
+              href="#contact"
+              class="text-center animate__animated animate__fadeInRight animate__delay-3s"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Overlay for mobile menu -->
+      <div class="overlay" id="overlay"></div>
+    </nav>
+
+    <!-- Hero Section with improved responsiveness and animations -->
+    <section
+      class="min-h-screen flex items-center pt-20 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-gray-900/20"
+        id="home"
+      ></div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10"
+      >
+        <div class="text-center lg:text-left order-2 lg:order-1">
+          <p
+            class="text-gray-400 mb-4 text-sm sm:text-base animate__animated animate__fadeInLeft"
+          >
+            Hello Everyone 👋
+          </p>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text animate__animated animate__zoomIn animate__delay-1s"
+          >
+            I am Rianto
+          </h1>
+          <p
+            class="text-gray-300 text-base sm:text-lg mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0 animate__animated animate__fadeInUp animate__delay-2s"
+          >
+            I am a Software Engineering (RPL) student who is currently studying and developing skills in the fields of programming, application development, and digital technology.
+          </p>
+          <button
+            class="bg-white text-black px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors glow-effect animate__animated animate__bounceIn animate__delay-3s"
+          >
+            Let's talk
+          </button>
+            <a
+              href="CV.pdf" target="_blank"
+              class="bg-black text-white px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:text-black transition-colors glow-effect animate__animated animate__bounceIn animate__delay-3s"
+            >
+            Download CV</a>
+          </button>
+        </div>
+        <div
+          class="relative flex justify-center lg:justify-end order-1 lg:order-2"
+        >
+          <div
+            class="w-64 sm:w-80 md:w-96 h-80 sm:h-96 md:h-[28rem] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden glow-effect animate__animated animate__fadeInRight"
+          >
+            <img
+              src="img/IMG-20250815-WA0110.jpg"
+              alt="Rianto"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="py-16 sm:py-20 section-bg animate__animated animate__fadeInUp"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <p class="text-gray-400 mb-4">About Me</p>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+              I will help you to develop your business website
+            </h2>
+          </div>
+          <div>
+            <p class="text-gray-300 leading-relaxed text-center lg:text-left">
+              I’m a Software Engineering (RPL) student with a strong passion for
+              web development. I focus on creating responsive and modern
+              websites using HTML, CSS, JavaScript, and Tailwind CSS. I enjoy
+              turning ideas into clean and functional web designs, and I’m
+              always learning new technologies to improve my skills and deliver
+              better user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="service"
+      class="py-16 sm:py-20 relative animate__animated animate__fadeInUp"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-transparent via-gray-900/10 to-transparent"
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <h2
+          class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center lg:text-left"
+        >
+          Specialist Focus Project
+        </h2>
+        <p
+          class="text-gray-400 mb-8 sm:mb-12 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+        >
+          I focus on three main areas of expertise to deliver exceptional
+          results for your business needs.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div
+            class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect animate__animated animate__zoomIn animate__delay-1s"
+          >
+            <div
+              class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left"
+            >
+              Software development
+            </h3>
+            <p class="text-gray-400 text-center sm:text-left">
+              Software development such as creating websites
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect sm:col-span-2 lg:col-span-1 animate__animated animate__zoomIn animate__delay-3s"
+          >
+            <div
+              class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M142 159.8C142 106.9 184.9 64 237.8 64L402.2 64C455.1 64 498 106.9 498 159.8C498 193.3 480.8 222.8 454.8 239.9C480.8 257 498 286.5 498 320C498 372.9 455.1 415.8 402.2 415.8L400.1 415.8C375.3 415.8 352.7 406.4 335.7 390.9L335.7 479.2C335.7 532.8 291.7 576 238.3 576C185.5 576 142 533.2 142 480.2C142 446.7 159.2 417.2 185.2 400.1C159.2 383 142 353.5 142 320C142 286.5 159.2 257 185.2 239.9C159.2 222.8 142 193.3 142 159.8zM304.3 255.6L237.8 255.6C202.2 255.6 173.4 284.4 173.4 320C173.4 355.4 202 384.2 237.4 384.4L304.3 384.4L304.3 255.6zM335.7 320C335.7 355.6 364.5 384.4 400.1 384.4L402.2 384.4C437.8 384.4 466.6 355.6 466.6 320C466.6 284.4 437.8 255.6 402.2 255.6L400.1 255.6C364.5 255.6 335.7 284.4 335.7 320zM237.8 415.8L237.4 415.8C202 416 173.4 444.8 173.4 480.2C173.4 515.6 202.6 544.6 238.3 544.6C274.6 544.6 304.3 515.2 304.3 479.1L304.3 415.7L237.8 415.7zM237.8 95.4C202.2 95.4 173.4 124.2 173.4 159.8C173.4 195.4 202.2 224.2 237.8 224.2L304.3 224.2L304.3 95.4L237.8 95.4zM335.7 224.2L402.2 224.2C437.8 224.2 466.6 195.4 466.6 159.8C466.6 124.2 437.8 95.4 402.2 95.4L335.7 95.4L335.7 224.2z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left"
+            >
+              Figma Theme Development
+            </h3>
+            <p class="text-gray-400 text-center sm:text-left">
+              A powerful Figma app for modern UI/UX design.
+            </p>
+          </div>
+          <div
+            class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect sm:col-span-2 lg:col-span-1 animate__animated animate__zoomIn animate__delay-3s"
+          >
+            <div
+              class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M96 96L310.6 96L310.6 310.6L96 310.6L96 96zM329.4 96L544 96L544 310.6L329.4 310.6L329.4 96zM96 329.4L310.6 329.4L310.6 544L96 544L96 329.4zM329.4 329.4L544 329.4L544 544L329.4 544L329.4 329.4z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left"
+            >
+              Microsoft 365 work
+            </h3>
+            <p class="text-gray-400 text-center sm:text-left">
+              Jobs like Excel, Word, PowerPoint
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-20 section-bg animate__animated animate__fadeInUp"
+      id="education"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4 text-center">
+          The experience that made
+        </h2>
+        <h2 class="text-4xl font-bold mb-12 text-center">Me who I am today</h2>
+        <div class="relative">
+          <div
+            class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-1 h-full rounded-full"
+          ></div>
+          <div class="space-y-12">
+            <div
+              class="flex items-center justify-between animate__animated animate__fadeInLeft"
+            >
+              <div class="w-5/12 text-right">
+                <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                  <h4 class="font-semibold">Banjar 1 Senior High School</h4>
+                  <p class="text-gray-400">2024 - Not finished yet</p>
+                </div>
+              </div>
+              <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+              <div class="w-5/12"></div>
+            </div>
+            <div
+              class="flex items-center justify-between animate__animated animate__fadeInRight"
+            >
+              <div class="w-5/12"></div>
+              <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+              <div class="w-5/12">
+                <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                  <h4 class="font-semibold">Cisaga 2 Middle School</h4>
+                  <p class="text-gray-400">2021 - 2024</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between animate__animated animate__fadeInLeft"
+            >
+              <div class="w-5/12 text-right">
+                <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                  <h4 class="font-semibold">Girimukti 2nd Elementary School</h4>
+                  <p class="text-gray-400">2015 - 2021</p>
+                </div>
+              </div>
+              <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+              <div class="w-5/12"></div>
+            </div>
+            <div
+              class="flex items-center justify-between animate__animated animate__fadeInRight"
+            >
+              <div class="w-5/12"></div>
+              <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+              <div class="w-5/12">
+                <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                  <h4 class="font-semibold">Birth</h4>
+                  <p class="text-gray-400">2008</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 relative animate__animated animate__fadeInUp">
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-20 left-10 w-32 h-32 border border-white rounded-full animate__animated animate__pulse animate__infinite"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-24 h-24 border border-white rounded-full animate__animated animate__pulse animate__infinite animate__delay-2s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/4 w-16 h-16 border border-white rounded-full animate__animated animate__pulse animate__infinite animate__delay-1s"
+        ></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-bold mb-12">Skills that I have Mastered</h2>
+        <p class="text-gray-400 mb-12 max-w-2xl">
+          Over the years, I have developed expertise in various technologies and
+          frameworks that enable me to create exceptional web experiences.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div
+            class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-1s"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"
+              />
+            </svg>
+          </div>
+          <div
+            class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-2s"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"
+              />
+            </svg>
+          </div>
+          <div
+            class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-3s"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M535.8 264.5C528.1 233.6 513.5 210.3 482.4 210.3L442.3 210.3L442.3 257.7C442.3 294.5 411.1 325.5 375.5 325.5L268.7 325.5C239.5 325.5 215.3 350.5 215.3 379.8L215.3 481.6C215.3 510.6 240.5 527.6 268.7 535.9C302.5 545.8 335 547.6 375.5 535.9C402.4 528.1 428.9 512.4 428.9 481.6L428.9 440.9L322.2 440.9L322.2 427.3L482.4 427.3C513.5 427.3 525 405.6 535.8 373.1C547 339.6 546.5 307.4 535.8 264.5zM382.2 508.7C374.6 509.2 367.3 505.5 363.3 499C359.4 492.4 359.4 484.3 363.3 477.7C367.3 471.2 374.6 467.5 382.2 468C389.8 467.5 397.1 471.2 401.1 477.7C405 484.3 405 492.4 401.1 499C397.1 505.5 389.8 509.2 382.2 508.7zM263.8 312.1L370.6 312.1C400.3 312.1 424 287.6 424 257.8L424 155.9C424 126.9 399.6 105.2 370.6 100.3C334.8 94.4 295.9 94.7 263.8 100.4C218.6 108.4 210.4 125.1 210.4 156L210.4 196.7L317.3 196.7L317.3 210.3L170.3 210.3C139.2 210.3 112 229 103.5 264.5C93.7 305.2 93.3 330.6 103.5 373.1C111.1 404.7 129.2 427.3 160.3 427.3L197 427.3L197 378.5C197 343.2 227.5 312.1 263.8 312.1zM257.2 128.7C268.5 128.7 277.6 137.8 277.6 149.1C277.6 160.4 268.5 169.5 257.2 169.5C245.9 169.5 236.8 160.4 236.8 149.1C236.8 137.8 245.9 128.7 257.2 128.7z"
+              />
+            </svg>
+          </div>
+          <div
+            class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-3s"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-5s"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                fill="#ffffff"
+                d="M320 168.5C491.4 168.5 623.2 240.7 623.2 320C623.2 399.3 491.3 471.5 320 471.5C148.6 471.5 16.8 399.3 16.8 320C16.8 240.7 148.7 168.5 320 168.5zM320 151.7C143.3 151.7 0 227 0 320C0 413 143.3 488.3 320 488.3C496.7 488.3 640 413 640 320C640 227 496.7 151.7 320 151.7zM218.2 306.5C210.3 347 182.4 342.8 148.1 342.8L161.8 272.2C199.8 272.2 225.6 268.1 218.2 306.5zM97.4 414.3L134.1 414.3L142.8 369.5C183.9 369.5 209.4 372.5 233 350.4C259.1 326.4 265.9 283.7 247.3 262.3C237.6 251.1 222 245.6 200.8 245.6L130.1 245.6L97.4 414.3zM283.1 200.7L319.6 200.7L310.9 245.5C342.4 245.5 371.6 243.2 385.7 256.2C400.5 269.8 393.4 287.2 377.4 369.3L340.4 369.3C355.8 289.9 358.7 283.3 353.1 277.3C347.7 271.5 335.4 272.7 305.7 272.7L286.9 369.3L250.4 369.3L283.1 200.7zM505 306.5C497 347.6 468.3 342.8 434.9 342.8L448.6 272.2C486.8 272.2 512.4 268.1 505 306.5zM384.2 414.3L421 414.3L429.7 369.5C472.9 369.5 496.8 372 519.9 350.4C546 326.4 552.8 283.7 534.2 262.3C524.5 251.1 508.9 245.6 487.7 245.6L417 245.6L384.2 414.3z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="project"
+      class="py-16 sm:py-20 section-bg animate__animated animate__fadeInUp"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 gap-4"
+        >
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Project Work</h2>
+            <p class="text-gray-400">
+              Here are some of my recent projects that showcase my skills and
+              expertise.
+            </p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6 lg:gap-8">
+          <div
+            class="group cursor-pointer animate__animated animate__zoomIn animate__delay-1s"
+          >
+            <div
+              class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80"
+            >
+              <a href="https://pixelmagicid.netlify.app/" target="_blank"
+                ><img
+                  src="img/web1.png"
+                  alt="CMS Center For Migration Studies"
+                  class="w-full object-cover"
+              /></a>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold">
+              Selling Goods with Posters
+            </h3>
+          </div>
+          <div
+            class="group cursor-pointer animate__animated animate__zoomIn animate__delay-2s"
+          >
+            <div
+              class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80"
+            >
+              <a href="https://pplgxdkvmatematika.netlify.app/" target="_blank"
+                ><img
+                  src="img/WEB2.png"
+                  alt="Voces de la Frontera"
+                  class="w-full object-cover"
+              /></a>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold">
+              Collaborating with the DKV Department
+            </h3>
+          </div>
+          <div
+            class="group cursor-pointer animate__animated animate__zoomIn animate__delay-3s"
+          >
+            <div
+              class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80"
+            >
+              <a href="https://lenggaraopentrip.netlify.app/" target="_blank"
+                ><img
+                  src="img/web3.png"
+                  alt="ITPI In The Public Interest"
+                  class="w-full object-cover"
+              /></a>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold">
+              Climbing Registration
+            </h3>
+          </div>
+          <div
+            class="group cursor-pointer animate__animated animate__zoomIn animate__delay-4s"
+          >
+            <div
+              class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-100"
+            >
+              <a href="https://ryntoosulis.netlify.app/" target="_blank">
+                <img
+                  src="img/Screenshot 2025-10-19 082125.png"
+                  alt="CHANGEWIRE"
+                  class="w-full object-cover"
+              /></a>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold">First Website Creation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-16 sm:py-20 relative animate__animated animate__fadeInUp"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"
+      ></div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">
+          Just say hello
+        </h2>
+        <p class="text-gray-400 text-center mb-8 sm:mb-12">
+          Ready to start your project? I would love to hear from you. Let's
+          discuss how we can bring your ideas to life.
+        </p>
+        <form class="space-y-6">
+          <div
+            class="grid sm:grid-cols-2 gap-6 animate__animated animate__fadeInLeft"
+          >
+            <div>
+              <label class="block text-sm font-medium mb-2">Name</label>
+              <input
+                type="text"
+                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input
+                type="email"
+                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect"
+              />
+            </div>
+          </div>
+          <div
+            class="grid sm:grid-cols-2 gap-6 animate__animated animate__fadeInRight"
+          >
+            <div>
+              <label class="block text-sm font-medium mb-2">Project Name</label>
+              <input
+                type="text"
+                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect"
+              />
+            </div>
+          </div>
+          <div class="animate__animated animate__fadeInUp">
+            <label class="block text-sm font-medium mb-2">Description</label>
+            <textarea
+              rows="6"
+              class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect"
+              placeholder="Tell me about your project..."
+            ></textarea>
+          </div>
+          <div class="text-center animate__animated animate__bounceIn">
+            <button
+              type="submit"
+              class="bg-white text-black px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors glow-effect"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="py-8 sm:py-12 border-t border-gray-800 animate__animated animate__fadeInUp"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-400 text-sm sm:text-base">
+            © 2025 Rianto. All rights reserved.
+          </p>
+          <div class="flex space-x-4">
+            <div
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-2s"
+            >
+              <a
+                href="https://github.com/ryntoosulis?tab=repositories"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github-icon lucide-github"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  />
+                  <path d="M9 18c-4.51 2-5-2-7-2" /></svg
+              ></a>
+            </div>
+            <div
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-3s"
+            >
+              <a
+                href="https://www.linkedin.com/in/rianto-sulistia-429699385/"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-link-icon lucide-link"
+                >
+                  <path
+                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                  />
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  /></svg
+              ></a>
+            </div>
+            <div
+              class="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-4s"
+            >
+              <a href="https://wa.me/6281238310231" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fa-brands fa-linkedin-in"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
